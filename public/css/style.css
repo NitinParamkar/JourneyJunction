@@ -9,8 +9,9 @@ body{
 }
 .navbar{
     height: 5rem;
-    background-color: #fff;
+    background-color: #7bd9b6;
 }
+
 .fa-compass{
     color:#fe424d;
     font-size: 2rem;
