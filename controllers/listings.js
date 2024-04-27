@@ -16,7 +16,7 @@ module.exports.showListing = async (req, res) => {
     let { id } = req.params;    //it means we extract id from the link itself
     const listing = await Listing.findById(id).populate({path: "reviews", populate:{path:"author",},}).populate("owner");
     if(!listing){
-      req.flash("error", "The Listing that you requested for, does not exists!");
+      req.flash("error", "The Destination that you requested for, does not exists!");
       res.redirect("/listings");
     }else{
     res.render("listings/show.ejs", { listing });
@@ -42,7 +42,7 @@ module.exports.createListing = async (req, res, next) => {
     newListing.geometry =  response.body.features[0].geometry;
     let savedListing = await newListing.save();
     //console.log(savedListing);
-    req.flash("success", "New Listing Created!");
+    req.flash("success", "New Destination Created!");
     res.redirect("/listings");
 
   };
@@ -51,7 +51,7 @@ module.exports.renderEditForm = async (req, res) => { //we use wrapAsync to hand
     let { id } = req.params;
     const listing = await Listing.findById(id);
     if(!listing){
-      req.flash("error", "The Listing that you requested for, does not exists!");
+      req.flash("error", "The Destination that you requested for, does not exists!");
       res.redirect("/listings");
     }else{
       let originalImageUrl = listing.image.url;
@@ -70,7 +70,7 @@ module.exports.updateListing = async (req, res) => {
     listing.image = { url , filename };
     await listing.save();
     }
-    req.flash("success", "Listing Updated!");
+    req.flash("success", "Destination Updated!");
     res.redirect(`/listings/${id}`);
   
   };
@@ -79,6 +79,6 @@ module.exports.destroyListing = async (req, res) => {
     let { id } = req.params;
     let deletedListing = await Listing.findByIdAndDelete(id);
     console.log(deletedListing);
-    req.flash("success", "Listing Deleted!");
+    req.flash("success", "Destination Deleted!");
     res.redirect("/listings");
   };
