@@ -99,7 +99,7 @@
         <p class="card-text">
           <b><%= listing.title %></b><br>
           &#8377;<% if (listing.price !== null && listing.price !== undefined && !isNaN(listing.price)) { %>
-            <%= Number(listing.price).toLocaleString("en-IN") %>/night
+            <%= Number(listing.price).toLocaleString("en-IN") %> day/night
             <i class="tax-info"> &nbsp; &nbsp; +18% GST</i>
           <% } else { %>
             Price not available
