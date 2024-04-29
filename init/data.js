@@ -4,7 +4,7 @@ let sampleListings = [
     description: 'Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.',
     image: {
       filename: 'listingimage',
-      url: 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'
+      url: 'https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fENvenklMjBCZWFjaGZyb250JTIwQ290dGFnZXxlbnwwfHwwfHx8MA%3D%3D'
     },
     price: 1500,
     location: 'Malibu',
@@ -16,7 +16,7 @@ let sampleListings = [
     description: 'Beautiful sunsets and unspoilt beaches with crystal clear water. Good surfing spot',
     image: {
       filename: 'listingimage',
-      url: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'
+      url: 'https://images.unsplash.com/photo-1656829500356-3b6f7c3b4c65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TWluZGJvZ2dsaW5nJTIwTWFkYWdhc2NhcnxlbnwwfHwwfHx8MA%3D%3D'
     },
     price: 1200,
     location: 'Madagascar',
@@ -28,7 +28,7 @@ let sampleListings = [
     description: "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
     image: {
       filename: 'listingimage',
-      url: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60'
+      url: 'https://images.unsplash.com/photo-1691433317101-fe4daf64b522?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fE1vdW50YWluJTIwUmV0cmVhdHxlbnwwfHwwfHx8MA%3D%3D'
     },
     price: 1000,
     location: 'Aspen',
@@ -91,7 +91,7 @@ let sampleListings = [
     description: 'Experience the epitome of luxury living with breathtaking oceanfront views from this exquisite penthouse in the Hawaiian Islands.',
     image: {
       filename: 'listingimage',
-      url: 'https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60'
+      url: 'https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fEx1eHVyeSUyMHdpdGglMjBPY2VhbmZyb250JTIwVmlld3N8ZW58MHx8MHx8fDA%3D'
     },
     price: 5000,
     location: 'Maui',
@@ -103,7 +103,7 @@ let sampleListings = [
     description: 'Hit the slopes right from your doorstep in this ski-in/ski-out chalet in the Swiss Alps.',
     image: {
       filename: 'listingimage',
-      url: 'https://images.unsplash.com/photo-1502784444187-359ac186c5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60'
+      url: 'https://images.unsplash.com/photo-1589223050279-18d1f14059cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U3dpc3MlMjBBbHBzfGVufDB8fDB8fHww'
     },
     price: 3000,
     location: 'Verbier',
@@ -275,7 +275,7 @@ let sampleListings = [
     description: "Stay in an eco-friendly treehouse nestled in the forest. It's the perfect escape for nature lovers.",
     image: {
       filename: 'listingimage',
-      url: 'https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60'
+      url: 'https://plus.unsplash.com/premium_photo-1685305676839-26406ddbe4de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RWNvJTIwRnJpZW5kbHklMjBUcmVlaG91c2UlMjBSZXRyZWF0fGVufDB8fDB8fHww'
     },
     price: 750,
     location: 'Costa Rica',
@@ -354,7 +354,7 @@ let sampleListings = [
     description: 'Escape to a secluded beach house on the Pacific coast of Costa Rica. Surf, relax, and unwind.',
     image: {
       filename: 'listingimage',
-      url: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'
+      url: 'https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVhY2glMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D'
     },
     price: 1800,
     location: 'Costa Rica',
