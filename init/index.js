@@ -1,6 +1,6 @@
 let result = require('dotenv').config({ path: 'C:/WanderLust Project/.env' });
-console.log("dotenv result:", result);
-console.log("Environment variables:", process.env);
+// console.log("dotenv result:", result);
+// console.log("Environment variables:", process.env);
 
 const mongoose = require("mongoose");                  
 const initData = require("./data.js");
@@ -43,7 +43,7 @@ main();
 const initDB = async () => {
   try {
     await Listing.deleteMany({});
-    initData.data = initData.data.map((obj) => ({ ...obj, owner: "66194f91591dba604e88bde2" }));
+    initData.data = initData.data.map((obj) => ({ ...obj, owner:process.env.ATLAS_ADMIN }));
     await Listing.insertMany(initData.data);
     console.log("Data was initialized");
   } catch (error) {
