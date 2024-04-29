@@ -5,18 +5,18 @@
 </script>
 
   <div class="row mt-3">
-    <div class="col-8 offset-2">
+    <div class="col-10 offset-3">
     <h3><%= listing.title %></h3>
     </div>
     <div class="card col-6 offset-3 show-card listing-card">
       <img src="<%= listing.image.url%>" class="card-img-top show-img" alt="listing_image"/>
       <div class="card-body">
-        <p class="card-text"><b>Destination owned by: <i><%= listing.owner.username %></i></b> </p>
+        <p class="card-text"><i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp;<b>Destination owned by: <i><%= listing.owner.username %></i></b> </p>
         
         <p class="card-text"><b><%= listing.description %></b></p>
-        <p class="card-text"><b>Rates starting from &#8377; <%= listing.price.toLocaleString("en-IN") %> per day/night.</b>
-        <p class="card-text"><b>Location: <%= listing.location %></b></p>
-        <p class="card-text"><b>Country: <%= listing.country %></b></p>
+        <p class="card-text"><b>&#9733;&nbsp;&nbsp;Rates starting from &#8377; <%= listing.price.toLocaleString("en-IN") %> per day/night.</b>
+        <p class="card-text"><b>&#128205;&nbsp;&nbsp;Location: <%= listing.location %></b></p>
+        <p class="card-text"><i class="fa-solid fa-flag"></i>&nbsp;&nbsp;<b>Country: <%= listing.country %></b></p>
       </div>
     </div>  
     <br />
