@@ -14,10 +14,10 @@ const cloudinary = require('cloudinary').v2;
 
 const dbUrl = process.env.ATLASDB_URL;
 console.log("ATLASDB_URL:", dbUrl); 
-// if (!dbUrl) {
-//   console.error("ATLASDB_URL is not defined in the environment variables.");
-//   process.exit(1); 
-// }
+ if (!dbUrl) {
+   console.error("ATLASDB_URL is not defined in the environment variables.");
+   process.exit(1); 
+ }
 
 async function main() {
   try {

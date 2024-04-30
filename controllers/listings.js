@@ -36,7 +36,7 @@ module.exports.createListing = async (req, res, next) => {
     let url = req.file.path;
     let filename  = req.file.filename;
     
-    const newListing = new Listing(req.body.listing); // so only we created listing object. it is equivalent to  let{title, description, image, price, country, location} = req.body;
+    const newListing = new Listing(req.body.listing); // here we created listing object. it is equivalent to  let{title, description, image, price, country, location} = req.body;
     newListing.owner = req.user._id;
     newListing.image = {url, filename};
     newListing.geometry =  response.body.features[0].geometry;
@@ -44,7 +44,6 @@ module.exports.createListing = async (req, res, next) => {
     //console.log(savedListing);
     req.flash("success", "New Destination Created!");
     res.redirect("/listings");
-
   };
 
 module.exports.renderEditForm = async (req, res) => { //we use wrapAsync to handle errors (try-catch ka kaam)
@@ -56,7 +55,7 @@ module.exports.renderEditForm = async (req, res) => { //we use wrapAsync to hand
     }else{
       let originalImageUrl = listing.image.url;
       originalImageUrl = originalImageUrl.replace("/upload","/upload/h_200,w_250");
-    res.render("listings/edit.ejs", { listing, originalImageUrl });
+      res.render("listings/edit.ejs", { listing, originalImageUrl });
     }
   };
 

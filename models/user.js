@@ -5,7 +5,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const userSchema = new Schema({
     email:{
         type: String,
-        required: true            //remember passport-local-mongoose will by default create fields for username and password
+        required: true            //remember passport-local-mongoose will bydefault create fields for username and password
     }
 })
 
